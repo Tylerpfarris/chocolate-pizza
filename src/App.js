@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import ChocolatePizzaHeader from './ChocolatePizzaHeader.js';
+import ChocolatePizzaRecipe from './ChocolatePizzaRecipe.js';
+import IngredientList from './IngredientList.js';
+import PizzaChocolateFooter from './PizzaChocolateFooter.js';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import pizzaImg from './lab-assets/choco-pizza.png'; 
+import fbIcon from './lab-assets/fb-icon.png'; 
+import flicIcon from './lab-assets/flic-icon.png'; 
+import gpIcon from './lab-assets/gp-icon.png'; 
+import hrImg from './lab-assets/hr-img.png';
+import instIcon from './lab-assets/hr-img.png';
+
+
+
+export default class ChocolatePizzaPage extends React.Component {
+  render (){
+    return(
+      <div>
+        <ChocolatePizzaHeader 
+        button1={fbIcon}
+        button2={flicIcon}
+        button3={gpIcon}
+        button4={instIcon} />
+        <img src="./lab-assets/choco-pizza.png" alt="choco pizza" />
+        <ChocolatePizzaRecipe />
+        <IngredientList />
+        <PizzaChocolateFooter />
+      </div>
+    )
+  }
 }
-
-export default App;

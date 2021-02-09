@@ -4,3 +4,7 @@
     background-color: black;
     color: azure;
 }
+
+.listBackground {
+    background-image: url('./lab-assets/list-bg.png');
+}

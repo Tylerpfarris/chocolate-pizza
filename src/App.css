@@ -45,3 +45,9 @@ header {
   display: flex;
   justify-content: flex-end;
 }
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}

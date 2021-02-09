@@ -1,5 +1,6 @@
 import React from 'react';
 import { ingredients } from './data.js';
+import style from './app.module.css';
 
 
 
@@ -8,10 +9,9 @@ export default class IngredientList extends React.Component {
 
         const ingredientItems = ingredients.map(ingredient => <div>
             <span>{ingredient.name} {ingredient.amount}</span>
-           
         </div>)
         return (
-            <div>{ingredientItems}</div>
+            <div className={style.listBackground}>{ingredientItems}</div>
         );
     }
 }
